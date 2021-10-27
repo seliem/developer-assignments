@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "e4dd90c3-3cba-46df-b561-93a7f8c2692b",
+		"name": "Tekdi Angular Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "googlebot"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gitesh Kumar\",\n    \"email\": \"gitesh@motorola.biz\",\n    \"dob\": \"2000-10-10\",\n    \"country\": \"IN\",\n    \"avatar\": \"https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50\"\n  }"
+				},
+				"url": {
+					"raw": "https://tekdi-challenges.appspot.com/api/People",
+					"protocol": "https",
+					"host": [
+						"tekdi-challenges",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"People"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Person",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "googlebot"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gitesh Kumar\",\n    \"email\": \"gitesh@motorola.biz\",\n    \"dob\": \"2000-10-10\",\n    \"country\": \"US\",\n    \"avatar\": \"https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50\"\n  }"
+				},
+				"url": {
+					"raw": "https://tekdi-challenges.appspot.com/api/People/2",
+					"protocol": "https",
+					"host": [
+						"tekdi-challenges",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"People",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tekdi-challenges.appspot.com/api/People",
+					"protocol": "https",
+					"host": [
+						"tekdi-challenges",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"People"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tekdi-challenges.appspot.com/api/People/1",
+					"protocol": "https",
+					"host": [
+						"tekdi-challenges",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"People",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
